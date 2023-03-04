@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Universe Hub</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- font wassam cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="overflow-x-hidden ">
+
+    <!-- 
+      git add README.md
+git commit -m "first commit"
+
+
+git push -u origin main
+     -->
+   
+    <header class="container mx-auto py-4 text-center">
+          <h2 class="font-bold pb-2">A Universe Hub</h2>
+          <button id="shortBtn"  type="button" class="btn btn-danger fs-5 py-2">Short By Date</button>
+    </header>
+
+
+
+<main class="container mx-auto">
+    <!-- snipper -->
+    <div class="d-flex justify-content-center">
+    <div onclick="showSpinner()" id="spinner" class="spinner-border text-danger d-none "role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    </div>
+
+    <!-- card -->
+    <div id="card_container" class="row row-cols-1 row-cols-md-3 g-4 py-5 container">    
+    </div>
+
+
+
+<!-- Modal -->
+<div class="container modal fade modal-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  position-relative">
+    <div class="modal-content">
+      <div class="modal-body d-flex flex-column-reverse flex-lg-row gap-4 p-3"    id="modalBody">
+      
+        
+      </div>
+      <div class="modal-footer">
+  
+     <div class=" py-2 px-3 rounded-circle bg-danger text-light position-absolute top-0 start-100 translate-middle">
+      <i data-bs-dismiss="modal" class="fa-solid fa-xmark fs-3"></i>
+     </div>
+
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- show more button -->
+      <div id="showMore"  onclick="showAllTogether()" class="my-4 text-center ">
+        <button  type="button" class="btn btn-danger fs-5">Show More</button>
+      </div>
+</main>
+
+
+
+
+
+
+   <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- link js -->
+    <script src="./universe.js"></script>
+  </body>
+</html>
